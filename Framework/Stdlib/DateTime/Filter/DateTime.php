@@ -74,7 +74,7 @@ class DateTime extends Date
      *
      * @throws \Exception
      */
-    function getDateFormat($locale)
+    public function getDateFormat($locale)
     {
         $formatter = new \IntlDateFormatter($locale, \IntlDateFormatter::SHORT, \IntlDateFormatter::NONE);
 
