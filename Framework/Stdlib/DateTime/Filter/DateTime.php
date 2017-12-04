@@ -83,9 +83,11 @@ class DateTime extends Date
         }
 
         if (!isset(self::DATE_FORMAT_MAPPER[$formatter->getPattern()])) {
-            throw new \Exception(sprintf(
+            throw new \Exception(
+                sprintf(
                     'Could not find correct date format fot selected pattern %s',
-                    $formatter->getPattern())
+                    $formatter->getPattern()
+                )
             );
         }
 
